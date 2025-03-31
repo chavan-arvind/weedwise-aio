@@ -5,7 +5,7 @@ import ImageUploader from '@/components/detection/ImageUploader';
 import ResultsDisplay from '@/components/detection/ResultsDisplay';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Plant, Sprout, Cells, Info } from 'lucide-react';
+import { Leaf, Sprout, Database, Info } from 'lucide-react';
 import { WeedAnalysisResult, getMockResult } from '@/types/weed-types';
 import { useToast } from '@/hooks/use-toast';
 
@@ -78,7 +78,7 @@ const Index = () => {
                 className="relative overflow-hidden group"
               >
                 <span className="relative z-10 flex items-center">
-                  <Plant className="mr-2 h-5 w-5" />
+                  <Leaf className="mr-2 h-5 w-5" />
                   Analyze Image
                 </span>
                 <span className="absolute inset-0 bg-gradient-to-r from-weedwise-primary to-weedwise-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
@@ -89,7 +89,7 @@ const Index = () => {
               <Card className="text-center card-hover">
                 <CardContent className="pt-6">
                   <div className="rounded-full bg-weedwise-light p-3 inline-flex mb-4">
-                    <Plant className="h-6 w-6 text-weedwise-primary" />
+                    <Leaf className="h-6 w-6 text-weedwise-primary" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">Weed Detection</h3>
                   <p className="text-gray-600 text-sm">
@@ -113,7 +113,7 @@ const Index = () => {
               <Card className="text-center card-hover">
                 <CardContent className="pt-6">
                   <div className="rounded-full bg-weedwise-light p-3 inline-flex mb-4">
-                    <Cells className="h-6 w-6 text-weedwise-primary" />
+                    <Database className="h-6 w-6 text-weedwise-primary" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">Smart Recommendations</h3>
                   <p className="text-gray-600 text-sm">
