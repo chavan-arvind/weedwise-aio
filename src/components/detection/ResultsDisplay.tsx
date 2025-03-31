@@ -132,7 +132,7 @@ const ResultsDisplay = ({ result }: ResultsDisplayProps) => {
                         <span className="text-sm">Without Treatment</span>
                         <span className="font-medium text-destructive">{result.roiImpact.yieldImpact.withoutTreatment}%</span>
                       </div>
-                      <Progress value={Math.abs(result.roiImpact.yieldImpact.withoutTreatment)} className="h-2 bg-red-100" indicatorClassName="bg-red-500" />
+                      <Progress value={Math.abs(result.roiImpact.yieldImpact.withoutTreatment)} className="h-2 bg-red-100" />
                     </div>
                     
                     <div>
